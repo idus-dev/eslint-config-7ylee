@@ -24,24 +24,38 @@ module.exports = {
             "unix"
         ],
         "no-underscore-dangle": [
-            "error", 
-            { 
+            "error",
+            {
                 "allow": ["_id"] // mongodb _id key
             }
-        ], 
+        ],
         "react/jsx-filename-extension": [
-            1, 
+            1,
             {
-                "extensions": [".js", ".jsx"] 
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "no-shadow": [
+            2,
+            {
+                "hoist": "all",
+                "allow": [
+                    "resolve",
+                    "reject",
+                    "done",
+                    "next",
+                    "err",
+                    "error"
+                ]
             }
         ],
         "prettier/prettier": [
             "error",
             {
-              "singleQuote": true,
-              "printWidth": 80,
-              "tabWidth": 4,
-              "useTabs": false
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "useTabs": false
             },
         ],
     },
