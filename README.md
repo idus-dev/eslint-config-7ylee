@@ -1,3 +1,19 @@
+# Eslint & Prettier 설정
+
+## 설치
+``` bash
+npx install-peerdeps --dev eslint-config-7ylee
+```
+
+## 프로젝트 .eslintrc 파일
+``` json
+{
+  "extends": [
+    "7ylee"
+  ]
+}
+```
+
 ## With VS Code
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
