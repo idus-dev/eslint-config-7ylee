@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-7ylee",
-  "version": "0.0.2",
+  "name": "eslint-config-idus",
+  "version": "0.0.1",
   "description": "ESLint & Prettier Config",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "keywords": [
     "eslint"
   ],
-  "author": "taeyouklee@gmail.com",
+  "author": "tylee@backpac.kr",
   "license": "ISC",
   "peerDependencies": {
     "babel-eslint": "^10.0.2",

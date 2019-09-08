@@ -1,12 +1,12 @@
 # Eslint & Prettier 설정
 
-[![npm](https://flat.badgen.net/npm/v/eslint-config-7ylee)](https://npmjs.com/package/eslint-config-7ylee)
+[![npm](https://flat.badgen.net/npm/v/eslint-config-idus)](https://npmjs.com/package/eslint-config-idus)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## 설치
 
 ``` bash
-npx install-peerdeps --dev eslint-config-7ylee
+npx install-peerdeps --dev eslint-config-idus
 ```
 
 ## 프로젝트 .eslintrc 파일
@@ -14,7 +14,7 @@ npx install-peerdeps --dev eslint-config-7ylee
 ``` json
 {
   "extends": [
-    "7ylee"
+    "idus"
   ]
 }
 ```
