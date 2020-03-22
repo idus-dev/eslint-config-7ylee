@@ -26,8 +26,6 @@ npx install-peerdeps --dev eslint-config-7ylee
     - 에디터 설정 파일 여는 방법: `cmd` + `shift` + `p` => `> Preferences: Open Settings (JSON)` 
 
   ```js
-    // 에디터 디폴트 -문서 저장시 포맷팅 기능 활성화
-    "editor.formatOnSave": true,
     // JS & JSX 는 비활성화 - eslint로 포맷팅 하기 위해 에디터 디폴트 기능은 해제합니다.
     "[javascript]": {
         "editor.formatOnSave": false
@@ -35,8 +33,10 @@ npx install-peerdeps --dev eslint-config-7ylee
     "[javascriptreact]": {
         "editor.formatOnSave": false
     },
-    // ESLint 플러그인의 저장시 수정 기능 활성화
-    "eslint.autoFixOnSave": true,
+     // 에디터 디폴트 -문서 저장시 포맷팅 기능 활성화
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     // !필수 아님
     // VScode의 Prettier Extension이 설치 되어있으면 JS & JSX 자동 포맷팅 비활성화 
     "prettier.disableLanguages": ["javascript", "javascriptreact"],
