@@ -5,34 +5,47 @@ module.exports = {
         "prettier/react"
     ],
     "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        // Can I remove these now?
-        "ecmaFeatures": {
-            "impliedStrict": true,
-            "classes": true
-        }
-    },
     "env": {
         "browser": true,
+        "es6": true,
         "node": true,
-        "jest": true
     },
+    "plugins": [
+        "html",
+        "prettier",
+        "react-hooks"
+    ],
     "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
         "linebreak-style": [
             "error",
             "unix"
         ],
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "useTabs": false,
+                "trailingComma": "none",
+                "arrowParens": "avoid"
+            }
+        ],
         "no-underscore-dangle": [
             "error",
             {
-                "allow": ["_id"] // mongodb _id key
-            }
-        ],
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx"]
+                "allow": [
+                    "_id"
+                ] // mongodb _id key
             }
         ],
         "no-shadow": [
@@ -48,20 +61,6 @@ module.exports = {
                     "error"
                 ]
             }
-        ],
-        "prettier/prettier": [
-            "error",
-            {
-                "singleQuote": true,
-                "printWidth": 80,
-                "tabWidth": 4,
-                "useTabs": false
-            },
-        ],
-    },
-    "plugins": [
-        "html",
-        "prettier",
-        "react-hooks"
-    ]
+        ]
+    }
 }
